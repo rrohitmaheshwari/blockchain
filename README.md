@@ -130,7 +130,7 @@ To register and broadcast new node URL.
 
 **Method** : `GET`
 
-**Data constraints**
+**Data**
 
 ```json
 {
