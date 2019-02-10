@@ -1,8 +1,29 @@
-# blockchain
+# Blockchain
 Javascript based blockchain
 
+### Prerequisite for blockchain project
 
-# Blockchain 
+1. NodeJS should be installed in the system
+2. Should run following command to install the project dependencies
+
+```
+npm i
+```
+
+### Command to start nodes
+
+```
+npm run node_1
+```
+ or
+```
+nodemon --watch dev -js dev/networkNode.js 3001 http://localhost:3001
+```
+check package.json for complete details
+
+## APIs
+
+### Blockchain 
 
 Fetches complete Blockchain.
 
@@ -44,7 +65,7 @@ Fetches complete Blockchain.
 ```
 
 
-# Transaction 
+### Transaction 
 
 To create and broadcast new Transactions.
 
@@ -63,7 +84,7 @@ To create and broadcast new Transactions.
 ```
 
 
-# Mine 
+### Mine 
 
 To mine a new block.
 
@@ -84,7 +105,7 @@ To mine a new block.
 
 
 
-# Register Node 
+### Register Node 
 
 To register and broadcast new node URL.
 
@@ -101,7 +122,7 @@ To register and broadcast new node URL.
 ```
 
 
-# Consensus
+### Consensus
 
 To register and broadcast new node URL.
 
