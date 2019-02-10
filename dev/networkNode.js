@@ -196,6 +196,7 @@ app.get('/consensus', function(req, res) {
 
 	Promise.all(requestPromises)
 	.then(blockchains => {
+
 		const currentChainLength = bitcoin.chain.length;
 		let maxChainLength = currentChainLength;
 		let newLongestChain = null;
@@ -208,7 +209,6 @@ app.get('/consensus', function(req, res) {
 				newPendingTransactions = blockchain.pendingTransactions;
 			};
 		});
-
 
 		if (!newLongestChain || (newLongestChain && !bitcoin.chainIsValid(newLongestChain))) {
 			res.json({

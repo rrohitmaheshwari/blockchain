@@ -14,13 +14,13 @@ function Blockchain() {
 
 
 //function to create New Block
-Blockchain.prototype.createNewBlock = function (nounce, previousBlockHash, hash){
+Blockchain.prototype.createNewBlock = function (nonce, previousBlockHash, hash){
 	
 	const  newBlock = {
 		index: this.chain.length + 1,	  		//block number
 		timestamp: Date.now(),			  		//current time date stamp
-		transaction: this.pendingTransactions, 	//current pending transactions
-		nounce: nounce,					  		//number comes from proof of work
+		transactions: this.pendingTransactions, 	//current pending transactions
+		nonce: nonce,					  		//number comes from proof of work
 		hash: hash,						  		//hash of the transactions
 		previousBlockHash: previousBlockHash	//data from the previous block hash
 	};
